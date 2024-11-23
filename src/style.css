@@ -1,14 +1,14 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(0, 255, 255, 0.8), /* Neon Cyan */
+    rgba(143, 255, 191, 0.9) /* Electric Mint */
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(0, 255, 255, 0.8), /* Neon Cyan */
+    rgba(143, 255, 191, 0.9) /* Electric Mint */
   );
 
   --imp-text-color: #c770f0;
@@ -32,10 +32,24 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #0C1F40;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: rgba(10, 40, 30, 1); /* Deep Tech Blue */
+}
+
+#preloader svg {
+  fill: #8FFFBF !important; /* Electric Mint */
 }
 
 #preloader-none {
@@ -256,10 +270,6 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -740,4 +750,243 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* Define Neon-Tech Futuristic Palette */
+:root {
+  --color-electric-mint: #8FFFBF;
+  --color-deep-tech-blue: #0C1F40;
+  --color-neon-cyan: #00FFFF;
+  --color-digital-lavender: #AC94FF;
+  --color-vivid-neon-orange: #FF6C00;
+  --color-light: #F5F5F5;
+  --color-dark: #000000;
+
+  /* Optional Glow Effects */
+  --glow-electric-mint: 0 0 10px #8FFFBF, 0 0 20px #8FFFBF;
+  --glow-neon-cyan: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  --glow-vivid-orange: 0 0 10px #FF6C00, 0 0 20px #FF6C00;
+
+  /* Updated Gradients */
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(0, 32, 32, 0.95), /* Darker near black */
+    rgba(10, 40, 30, 0.9)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(0, 32, 32, 0.95), /* Darker near black */
+    rgba(10, 40, 30, 0.9)
+  );
+
+  --imp-text-color: var(--color-electric-mint);
+}
+
+/* General Typography */
+body {
+  background-color: var(--color-deep-tech-blue) !important;
+  color: var(--color-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-electric-mint);
+}
+
+p, a {
+  color: var(--color-light);
+}
+
+a:hover {
+  color: var(--color-neon-cyan);
+  text-shadow: var(--glow-neon-cyan);
+}
+
+/* Purple Text */
+.purple {
+  color: var(--color-vivid-neon-orange) !important;
+}
+
+/* Buttons */
+button, .btn {
+  color: var(--color-dark);
+  background-color: var(--color-vivid-neon-orange);
+  border: 2px solid var(--color-vivid-neon-orange);
+  box-shadow: var(--glow-vivid-orange);
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-electric-mint);
+  border-color: var(--color-electric-mint);
+  box-shadow: var(--glow-electric-mint);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon-cyan);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-electric-mint);
+}
+
+/* Navbar */
+.sticky {
+  background-color: rgba(12, 15, 20, 0.9) !important;
+  transition: all 0.3s ease-out;
+  box-shadow: var(--glow-neon-cyan);
+  backdrop-filter: blur(15px);
+}
+
+.navbar {
+  background-color: rgba(17, 16, 24, 0.95);
+}
+
+.navbar-brand {
+  color: var(--color-electric-mint) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-light) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-neon-cyan) !important;
+  text-shadow: var(--glow-neon-cyan);
+}
+
+/* Home Section */
+.home-section {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.heading-name .main-name {
+  color: var(--color-vivid-neon-orange);
+}
+
+.Typewriter__wrapper {
+  color: var(--color-neon-cyan) !important;
+}
+
+.Typewriter__cursor {
+  color: var(--color-digital-lavender) !important;
+}
+
+/* Cards */
+.project-card-view, .blog-card-view {
+  background-color: rgba(12, 15, 20, 0.8) !important;
+  color: var(--color-light) !important;
+  box-shadow: 0 4px 5px 3px rgba(8, 12, 24, 0.5) !important;
+}
+
+.project-card-view:hover, .blog-card-view:hover {
+  box-shadow: 0 4px 10px 5px rgba(12, 24, 40, 0.7) !important;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.footer h3 {
+  color: var(--color-electric-mint) !important;
+}
+
+/* Social Icons */
+.home-social-icons {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.home-social-icons:hover {
+  color: var(--color-neon-cyan);
+  text-shadow: var(--glow-neon-cyan);
+}
+
+.home-social-icons::before {
+  background: var(--color-digital-lavender);
+}
+
+/* About Section */
+.about-section {
+  background-image: var(--section-background-color) !important;
+}
+
+.tech-icons {
+  color: var(--color-electric-mint);
+  border: 1.7px solid var(--color-neon-cyan);
+  box-shadow: 4px 5px 4px 3px rgba(12, 24, 40, 0.5);
+}
+
+.tech-icons:hover {
+  border: 2.2px solid var(--color-electric-mint);
+  box-shadow: var(--glow-electric-mint);
+}
+
+/* Resume Section */
+.resume-section {
+  background-image: var(--section-background-color) !important;
+}
+
+.resume .resume-item {
+  border-left: 2px solid var(--color-digital-lavender);
+}
+
+.resume .resume-item::before {
+  background: var(--color-electric-mint);
+  border: 2px solid var(--color-neon-cyan);
+}
+
+/* Apply Gradient Background to All Sections */
+section {
+  background-image: var(--section-background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+/* Ensure Specific Section Styles Maintain Compatibility */
+.home-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.about-section {
+  background-image: var(--section-background-color);
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+
+.resume-section {
+  background-image: var(--section-background-color);
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+}
+
+.project-section {
+  background-image: var(--section-background-color);
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+
+.footer {
+  background-image: var(--section-background-color);
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
 }
