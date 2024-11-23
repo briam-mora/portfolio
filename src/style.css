@@ -208,11 +208,11 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--color-neon-cyan);
   bottom: 1px;
   left: 0;
   z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  transition: width 0.4s ease-out, box-shadow 0.4s ease-out;
 }
 
 .navbar-nav .nav-item a:hover::after {
@@ -368,7 +368,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: rgba(14, 51, 44, 0.95) !important; /* Darkened Electric Mint */
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -381,7 +381,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: var(--color-neon-cyan); /* Neon Cyan */
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -389,13 +389,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px var(--color-electric-mint); /* Glow effect with Electric Mint */
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--color-neon-cyan); /* Change text/icon color on hover */
+  box-shadow: 0 0 5px var(--color-electric-mint);
+  text-shadow: 0 0 2px var(--color-electric-mint);
 }
 
 .social-icons {
@@ -405,7 +405,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: var(--color-light); /* White/light text for icons */
 }
 
 /* --------- */
@@ -470,7 +470,6 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -527,15 +526,15 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: var(--color-dark) !important; /* Dark text for contrast */
+  background-color: var(--color-neon-cyan) !important; /* Neon Cyan background */
+  border-color: var(--color-neon-cyan) !important; /* Neon Cyan border */
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: var(--color-electric-mint) !important;
+  border-color: var(--color-electric-mint) !important;
+  color: var(--color-dark) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -565,12 +564,12 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid var(--color-neon-cyan) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3), 0 0 15px rgba(0, 255, 255, 0.5);
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -584,7 +583,8 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6), 0 0 25px rgba(0, 255, 255, 0.8); /* Stronger neon glow */
+  border-color: var(--color-electric-mint);
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -790,6 +790,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
   color: var(--color-electric-mint);
 }
 
@@ -814,6 +815,8 @@ button, .btn {
   border: 2px solid var(--color-vivid-neon-orange);
   box-shadow: var(--glow-vivid-orange);
   transition: all 0.3s ease;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
 }
 
 button:hover, .btn:hover {
@@ -885,13 +888,12 @@ button:hover, .btn:hover {
 
 /* Cards */
 .project-card-view, .blog-card-view {
-  background-color: rgba(12, 15, 20, 0.8) !important;
-  color: var(--color-light) !important;
-  box-shadow: 0 4px 5px 3px rgba(8, 12, 24, 0.5) !important;
+  background-color: rgba(10, 20, 30, 0.9) !important; /* Darker background for more contrast */
+  color: var(--color-light) !important; /* Consistent light text */
 }
 
 .project-card-view:hover, .blog-card-view:hover {
-  box-shadow: 0 4px 10px 5px rgba(12, 24, 40, 0.7) !important;
+  box-shadow: 0 4px 15px 5px rgba(0, 255, 255, 0.6), 0 0 20px var(--color-electric-mint) !important; /* Neon glow hover effect */
 }
 
 /* Footer */
@@ -902,20 +904,6 @@ button:hover, .btn:hover {
 
 .footer h3 {
   color: var(--color-electric-mint) !important;
-}
-
-/* Social Icons */
-.home-social-icons {
-  background: rgba(255, 255, 255, 0.95) !important;
-}
-
-.home-social-icons:hover {
-  color: var(--color-neon-cyan);
-  text-shadow: var(--glow-neon-cyan);
-}
-
-.home-social-icons::before {
-  background: var(--color-digital-lavender);
 }
 
 /* About Section */

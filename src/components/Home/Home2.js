@@ -18,20 +18,14 @@ function Home2() {
             <p className="home-about-body">
               My programming journey began with a passion for game development and problem-solving. With over five years of professional experience, I have developed expertise in technologies like
               <br />
-              <i>
-                <b className="purple"> React.js, Node.js, and Unity.</b>
-              </i>
+              <b className="purple"> React.js, Node.js, and Unity.</b>
               <br />
               <br />
               I specialize in building
-              <i>
-                <b className="purple"> interactive web and mobile applications, </b>
-              </i>
+              <b className="purple"> interactive web and mobile applications, </b>
               with a strong focus on
               <br />
-              <i>
-                <b className="purple"> XR (Extended Reality) and Artificial Intelligence.</b>
-              </i>
+              <b className="purple"> XR (Extended Reality) and Artificial Intelligence.</b>
               <br />
               <br />
               Whether leading teams or crafting solutions hands-on, I am inspired by the intersection of technology and creativity, constantly pushing the boundaries to deliver transformative, future-ready platforms.

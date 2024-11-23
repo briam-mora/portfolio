@@ -16,13 +16,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <SlArrowRight /> Playing new indie games with fresh and creative concepts
+              <SlArrowRight /> Playing indie games
             </li>
             <li className="about-activity">
-              <SlArrowRight /> Watching sci-fi and fantasy movies that ignite my imagination
+              <SlArrowRight /> Watching sci-fi and fantasy movies
             </li>
             <li className="about-activity">
-              <SlArrowRight /> Recharging in nature to clear my mind and find inspiration
+              <SlArrowRight /> Recharging in nature
             </li>
           </ul>
         </blockquote>
