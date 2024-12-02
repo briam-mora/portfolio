@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/vr.png";
 import {
   AiFillInstagram,
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -52,12 +53,22 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/briam_mora"
+                  href="https://www.instagram.com/briam_xr"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.x.com/briam_xr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineTwitter />
                 </a>
               </li>
             </ul>
