@@ -53,7 +53,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/briam_xr"
+                  href="https://www.instagram.com/briam_mora"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -63,7 +63,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.x.com/briam_xr"
+                  href="https://www.x.com/briam_mora"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
